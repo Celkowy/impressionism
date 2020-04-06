@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap&subset=latin-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: white;
+  font-size: 10px;
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #333;
+}
+
+
+body #myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition-duration: .5s;
+}
+
+body #myBtn:hover {
+  background-color: royalblue;
+  border-color: royalblue;
+}
+
+body button a {
+  display: block;
+  padding: 8px;
+  line-height: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+
+nav {
+  padding: 15px 30px;
+  border-bottom: 4px solid royalblue;
+  text-align: right;
+  font-size: 0;
+}
+
+nav a {
+  margin: auto 12px;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+}
+
+nav a.click {
+  border: 2px solid white;
+  margin-left: 100px;
+  margin-right: 80px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+nav a.click:hover {
+  background-color: royalblue;
+  border: 2px solid royalblue;
+}
+
+nav a.cool-link {
+  position: relative;
+}
+
+
+.cool-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  border-bottom: 2px solid royalblue;
+  transition: 0.4s;
+}
+
+.cool-link:hover::after {
+  right: 0;
+}
+
+.wrap {
+  padding-top: 50%;
+}
+
+
+header {
+  position: relative;
+  border-bottom: 4px solid royalblue;
+  background-image: url(img/sun.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header h1.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: overlay;
+  filter: invert(1) grayscale(1) contrast(1);
+}
+
+
+main #description {
+  margin: 0 100px 175px 100px;
+  padding-top: 250px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main p::first-letter {
+  color: royalblue;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+
+section div img#center {
+  display: block;
+  max-width: 1920px;
+  margin: 0 auto;
+  border-bottom: 4px solid royalblue;
+}
+
+section div h1 {
+  margin-top: 125px;
+  font-size: 2.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+section div h2 {
+  text-align: center;
+}
+
+section #image-metric {
+  width: 450px;
+  height: 250px;
+  margin: 50px auto 350px auto;
+  border: 4px solid white;
+  border-radius: 5px;
+  transition: .4s;
+}
+
+section #image-metric:hover {
+  background-color: royalblue;
+  border-color: royalblue;
+}
+
+section .padding {
+  padding-top: 15px;
+}
+
+
+.metric {
+  margin-top: 300px;
+  font-size: 4rem;
+  font-style: normal;
+}
+
+.metric::first-letter {
+  color: royalblue;
+}
+
+#image-metric h2 {
+  margin: 0 auto 30px auto;
+  font-size: 1.5rem;
+}
+
+section div img {
+  width: 90vw;
+  padding-top: 100px;
+}
+
+
+footer p {
+  margin: 0 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: royalblue 2px solid;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+@media (max-width: 1440px) {
+  header h1.quote {
+    font-size: 7rem;
+  }
+}
+
+
+@media (max-width: 1100px) {
+
+  nav {
+    line-height: 100px;
+  }
+
+  nav .cool-link {
+    display: none;
+  }
+
+  nav a.click {
+    margin: 0;
+  }
+
+  main #description {
+    margin: 0 75px;
+  }
+
+  body #myBtn {
+    display: none;
+  }
+
+  footer p {
+    margin: 0 25px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  header h1.quote {
+    font-size: 6rem;
+  }
+
+  .metric {
+    margin-top: 250px;
+  }
+
+  main #description {
+    padding-top: 200px;
+  }
+
+  section #image-metric {
+    margin-bottom: 300px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  nav {
+    line-height: 70px;
+  }
+
+  nav a.click {
+    font-size: 2.2rem;
+  }
+
+  header h1.quote {
+    font-size: 5rem;
+  }
+
+  main #description {
+    margin: 0 50px;
+    padding-top: 150px;
+    font-size: 1.3rem;
+
+  }
+
+  section div h1 {
+    margin-top: 100px;
+    font-size: 2.2rem;
+  }
+
+  .metric {
+    margin-top: 200px;
+    font-size: 3.5rem;
+  }
+
+  section #image-metric {
+    margin-bottom: 250px;
+  }
+}
+
+
+
+@media (max-width: 640px) {
+
+  nav {
+    line-height: 60px;
+  }
+
+  nav a.click {
+    font-size: 2.1rem;
+  }
+
+  header h1.quote {
+    font-size: 4rem;
+  }
+
+  main #description {
+    margin: 0 30px;
+    padding-top: 100px;
+    font-size: 1.3rem;
+  }
+
+  section div h1 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  section #image-metric {
+    width: 400px;
+    margin-bottom: 200px;
+  }
+}
+
+
+@media(max-width: 480px) {
+
+  nav a.click {
+    font-size: 2rem;
+  }
+
+  header h1.quote {
+    font-size: 3rem;
+  }
+
+  main #description {
+    margin: 0 15px;
+    font-size: 1.2rem;
+  }
+
+  .metric {
+    margin-top: 150px;
+    font-size: 3rem;
+  }
+
+  section #image-metric {
+    width: 350px;
+    height: 240px;
+    margin-bottom: 150px;
+  }
+
+  #image-metric h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media(max-width: 420px) {
+  section #image-metric {
+    width: 280px;
+    height: 255px;
+  }
+
+  nav a.click {
+    margin: 0;
+    border-width: 1px;
+    font-size: 1.5rem;
+  }
+
+  section #image-metric {
+    margin-bottom: 125px;
+  }
+}
+
+
+
+
+@media(max-width: 320px) {
+
+  header {
+    border-width: 2px;
+  }
+
+  header h1.quote {
+    font-size: 2.7rem;
+  }
+
+  nav {
+    border-width: 2px;
+    padding: 15px;
+  }
+
+  nav a.click {
+    margin: 0;
+    border-width: 1px;
+    font-size: 1.5rem;
+  }
+
+  main #description {
+    margin: 0 30px;
+    padding-top: 100px;
+    font-size: 1rem;
+  }
+
+  section div h1 {
+    font-size: 1rem;
+  }
+
+  .metric {
+    margin-top: 125px;
+    font-size: 3rem;
+  }
+
+  #image-metric h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+
+  section div h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+
+  section div img#center {
+    width: 98%;
+    border-width: 2px;
+  }
+
+  section #image-metric {
+    width: 250px;
+    height: 200px;
+    border-width: 2px;
+  }
+
+  footer p {
+    margin: 0 15px;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: dimgrey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
