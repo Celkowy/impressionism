@@ -18,8 +18,7 @@ body {
   background-color: #333;
 }
 
-
-body #myBtn {
+#my-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -32,19 +31,18 @@ body #myBtn {
   transition-duration: .5s;
 }
 
-body #myBtn:hover {
+#my-btn:hover {
   background-color: royalblue;
   border-color: royalblue;
 }
 
-body button a {
+.a-my-btn {
   display: block;
   padding: 8px;
   line-height: 32px;
   color: white;
   text-decoration: none;
 }
-
 
 nav {
   padding: 15px 30px;
@@ -64,7 +62,7 @@ nav a {
   letter-spacing: 1.2px;
 }
 
-nav a.click {
+.click {
   border: 2px solid white;
   margin-left: 100px;
   margin-right: 80px;
@@ -72,15 +70,14 @@ nav a.click {
   transition: 0.4s;
 }
 
-nav a.click:hover {
+.click:hover {
   background-color: royalblue;
   border: 2px solid royalblue;
 }
 
-nav a.cool-link {
+.cool-link {
   position: relative;
 }
-
 
 .cool-link::after {
   content: '';
@@ -100,7 +97,6 @@ nav a.cool-link {
   padding-top: 50%;
 }
 
-
 header {
   position: relative;
   border-bottom: 4px solid royalblue;
@@ -109,7 +105,7 @@ header {
   background-position: center;
 }
 
-header h1.quote {
+.quote {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,41 +118,45 @@ header h1.quote {
   filter: invert(1) grayscale(1) contrast(1);
 }
 
-
-main #description {
+#description {
   margin: 0 100px 175px 100px;
   padding-top: 250px;
   text-align: center;
   font-size: 1.5rem;
 }
 
-main p::first-letter {
+#description::first-letter {
   color: royalblue;
   font-size: 4rem;
   font-weight: bold;
   line-height: 1rem;
 }
 
-
-section div img#center {
+#center {
   display: block;
   max-width: 1920px;
   margin: 0 auto;
   border-bottom: 4px solid royalblue;
 }
 
-section div h1 {
+.dou-venons {
   margin-top: 125px;
   font-size: 2.5rem;
   text-align: center;
   font-style: italic;
 }
 
-section div h2 {
+.metric {
   text-align: center;
 }
 
-section #image-metric {
+.text-center {
+  text-align: center;
+  margin: 0 auto 30px auto;
+  font-size: 1.5rem;
+}
+
+#image-metric {
   width: 450px;
   height: 250px;
   margin: 50px auto 350px auto;
@@ -165,15 +165,14 @@ section #image-metric {
   transition: .4s;
 }
 
-section #image-metric:hover {
+#image-metric:hover {
   background-color: royalblue;
   border-color: royalblue;
 }
 
-section .padding {
+.padding {
   padding-top: 15px;
 }
-
 
 .metric {
   margin-top: 300px;
@@ -185,18 +184,12 @@ section .padding {
   color: royalblue;
 }
 
-#image-metric h2 {
-  margin: 0 auto 30px auto;
-  font-size: 1.5rem;
-}
-
-section div img {
+#center {
   width: 90vw;
   padding-top: 100px;
 }
 
-
-footer p {
+.p-footer {
   margin: 0 100px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -208,13 +201,12 @@ footer p {
   font-weight: bold;
 }
 
-
 @media (max-width: 1440px) {
-  header h1.quote {
+
+  .quote {
     font-size: 7rem;
   }
 }
-
 
 @media (max-width: 1100px) {
 
@@ -222,30 +214,30 @@ footer p {
     line-height: 100px;
   }
 
-  nav .cool-link {
+  .cool-link {
     display: none;
   }
 
-  nav a.click {
+  .click {
     margin: 0;
   }
 
-  main #description {
+  #description {
     margin: 0 75px;
   }
 
-  body #myBtn {
+  #my-btn {
     display: none;
   }
 
-  footer p {
+  .p-footer {
     margin: 0 25px;
   }
 }
 
-
 @media (max-width: 1024px) {
-  header h1.quote {
+
+  .quote {
     font-size: 6rem;
   }
 
@@ -253,15 +245,14 @@ footer p {
     margin-top: 250px;
   }
 
-  main #description {
+  #description {
     padding-top: 200px;
   }
 
-  section #image-metric {
+  #image-metric {
     margin-bottom: 300px;
   }
 }
-
 
 @media (max-width: 768px) {
 
@@ -269,22 +260,22 @@ footer p {
     line-height: 70px;
   }
 
-  nav a.click {
+  .click {
     font-size: 2.2rem;
   }
 
-  header h1.quote {
+  .quote {
     font-size: 5rem;
   }
 
-  main #description {
+  #description {
     margin: 0 50px;
     padding-top: 150px;
     font-size: 1.3rem;
 
   }
 
-  section div h1 {
+  .dou-venons {
     margin-top: 100px;
     font-size: 2.2rem;
   }
@@ -294,11 +285,10 @@ footer p {
     font-size: 3.5rem;
   }
 
-  section #image-metric {
+  #image-metric {
     margin-bottom: 250px;
   }
 }
-
 
 
 @media (max-width: 640px) {
@@ -307,43 +297,42 @@ footer p {
     line-height: 60px;
   }
 
-  nav a.click {
+  .click {
     font-size: 2.1rem;
   }
 
-  header h1.quote {
+  .quote {
     font-size: 4rem;
   }
 
-  main #description {
+  #description {
     margin: 0 30px;
     padding-top: 100px;
     font-size: 1.3rem;
   }
 
-  section div h1 {
+  .dou-venons {
     margin-left: 25px;
     margin-right: 25px;
   }
 
-  section #image-metric {
+  #image-metric {
     width: 400px;
     margin-bottom: 200px;
   }
 }
 
-
 @media(max-width: 480px) {
 
-  nav a.click {
+  .click {
     font-size: 2rem;
   }
 
-  header h1.quote {
+  .quote {
     font-size: 3rem;
   }
 
-  main #description {
+  #description {
     margin: 0 15px;
     font-size: 1.2rem;
   }
@@ -353,36 +342,34 @@ footer p {
     font-size: 3rem;
   }
 
-  section #image-metric {
+  #image-metric {
     width: 350px;
     height: 240px;
     margin-bottom: 150px;
   }
 
-  #image-metric h2 {
+  .text-center {
     font-size: 1.3rem;
   }
 }
 
 @media(max-width: 420px) {
-  section #image-metric {
+
+  #image-metric {
     width: 280px;
     height: 255px;
   }
 
-  nav a.click {
+  .click {
     margin: 0;
     border-width: 1px;
     font-size: 1.5rem;
   }
 
-  section #image-metric {
+  #image-metric {
     margin-bottom: 125px;
   }
 }
-
-
-
 
 @media(max-width: 320px) {
 
@@ -390,7 +377,7 @@ footer p {
     border-width: 2px;
   }
 
-  header h1.quote {
+  .quote {
     font-size: 2.7rem;
   }
 
@@ -399,19 +386,19 @@ footer p {
     padding: 15px;
   }
 
-  nav a.click {
+  .click {
     margin: 0;
     border-width: 1px;
     font-size: 1.5rem;
   }
 
-  main #description {
+  #description {
     margin: 0 30px;
     padding-top: 100px;
     font-size: 1rem;
   }
 
-  section div h1 {
+  .dou-venons {
     font-size: 1rem;
   }
 
@@ -420,33 +407,57 @@ footer p {
     font-size: 3rem;
   }
 
-  #image-metric h2 {
+  .text-center {
     margin-bottom: 15px;
     font-size: 1.2rem;
   }
 
-  section div h1 {
+  .dou-venons {
     margin-top: 50px;
     font-size: 2rem;
   }
 
-  section div img#center {
+  #center {
     width: 98%;
     border-width: 2px;
   }
 
-  section #image-metric {
+  #image-metric {
     width: 250px;
     height: 200px;
     border-width: 2px;
   }
 
-  footer p {
+  .p-footer {
     margin: 0 15px;
   }
 }
 
+@media(max-width: 240px) {
 
+  .quote {
+    font-size: 2rem;
+  }
+
+  #description {
+    padding-top: 60px;
+  }
+
+  .metric {
+    margin-top: 100px;
+    font-size: 2.6rem;
+  }
+
+  #image-metric {
+    width: 210px;
+    height: 200px;
+    border-width: 2px;
+  }
+
+  .p-footer {
+    margin: 0 15px;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 10px;
