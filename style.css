@@ -168,6 +168,7 @@ header {
 #image-metric:hover {
   background-color: royalblue;
   border-color: royalblue;
+  cursor: pointer;
 }
 
 .padding {
@@ -301,6 +302,11 @@ header {
     font-size: 2.1rem;
   }
 
+  .click:hover {
+    background-color: #333;
+    border: 2px solid white;
+  }
+
   .quote {
     font-size: 4rem;
   }
@@ -319,6 +325,12 @@ header {
   #image-metric {
     width: 400px;
     margin-bottom: 200px;
+  }
+
+  #image-metric:hover {
+    background-color: #333;
+    border-color: white;
+    cursor: none;
   }
 }
 
